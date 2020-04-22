@@ -1,12 +1,12 @@
 ## Name
 [Chatbot｜とらゼミ](https://chatbot-demo-1bc98.web.app/)
 
-## Overview
+## 01. Overview
 This is DEMO app for "日本一わかりやすいReact入門【実践編】" produced by とらゼミ  
 This app is developed as teaching materials for React.  
 [YouTube Link](https://www.youtube.com/playlist?list=PLX8Rsrpnn3IVOk48awq_nKW0aFP0MGpnn)
 
-## Installation
+## 02. Installation
 ### create-react-app
 `npx create-react-app YOUR_PROJECT_NAME`
 
@@ -21,3 +21,20 @@ This app is developed as teaching materials for React.
 3. Add stylesheet for Material-UI  
 `<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />`  
 `<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />`
+
+## 03. Create Firebase project
+
+### Install firebase-tools globally 
+`npm install -g firebase-tools`
+
+### Login your google account (which created a Firebase project)
+`firebase login`
+
+### Init local environment to connect Firebase project
+`firebase init`
+
+### Install firebase package in your work directory
+`npm install --save firebase`
+
+### Deploy your React App to the site hosted by Firebase
+`firebase deploy` 
