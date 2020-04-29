@@ -40,6 +40,12 @@ This app is developed as teaching materials for React.
 `firebase deploy` 
 
 ## 10. Firebase
+### Create Cloud Functions API
+Import these packages and initialize Firebase app
+`import * as functions from 'firebase-functions';
+ import * as admin from "firebase-admin";
+ admin.initializeApp();
+ const db = admin.firestore();` 
 
 ### Execute Cloud Functions API
 `curl -X POST https://YOUR_REGION-YOUR_PROJECT_NAME.cloudfunctions.net/addDataset -H "Content-Type:application/json" -d @dataset.json`
