@@ -5,6 +5,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import {TextInput} from "./index";
+import {WEBHOOK_URL} from '../../webhookConfig'
 
 export default class FormDialog extends React.Component {
     constructor(props) {
@@ -71,10 +72,8 @@ export default class FormDialog extends React.Component {
                     + '【問い合わせ内容】\n' + description
             };
 
-            const url = 'YOUR_INCOMING_WEBHOOK_URL';
-
             // fetchメソッドでフォームの内容をSlackのIncoming Webhook URL に送信する
-            fetch(url, {
+            fetch(WEBHOOK_URL, {
                 method: 'POST',
                 body: JSON.stringify(payload)
             }).then(() => {

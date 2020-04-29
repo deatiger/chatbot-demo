@@ -20,10 +20,6 @@
       {
         "source": "**",
         "destination": "/index.html"
-      },
-      {
-        "source": "/v1/dataset",
-        "functions": "addDataset"
       }
     ]
   }

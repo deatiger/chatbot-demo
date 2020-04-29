@@ -7,7 +7,7 @@ const useStyles = makeStyles(() =>
         "button": {
             borderColor: "#FFB549",
             color: "#FFB549",
-            fontWeight: "600",
+            fontWeight: 600,
             marginBottom: "8px",
             "&:hover": {
                 backgroundColor: "#FFB549",
