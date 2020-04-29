@@ -38,3 +38,8 @@ This app is developed as teaching materials for React.
 
 ### Deploy your React App to the site hosted by Firebase
 `firebase deploy` 
+
+## 10. Firebase
+
+### Execute Cloud Functions API
+`curl -X POST https://YOUR_REGION-YOUR_PROJECT_NAME.cloudfunctions.net/addDataset -H "Content-Type:application/json" -d @dataset.json`
