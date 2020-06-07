@@ -15,15 +15,15 @@ const FormDialog = (props) => {
     // Functions triggered by inputting text value
     const inputDescription = useCallback((event) => {
         setDescription(event.target.value)
-    },[]);
+    },[setDescription]);
 
     const inputEmail = useCallback((event) => {
         setEmail(event.target.value)
-    },[]);
+    },[setEmail]);
 
     const inputName = useCallback((event) => {
         setName(event.target.value)
-    },[]);
+    },[setName]);
 
     const validateEmailFormat = (email) => {
         const regex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/

@@ -44,7 +44,7 @@ const App = () => {
     }
 
     // 回答が選択された時に呼ばれる関数
-    const selectAnswer = (selectedAnswer, nextQuestionId) => {
+    const selectAnswer = useCallback((selectedAnswer, nextQuestionId) => {
         switch (true) {
             // お問い合わせが選択された場合
             case (nextQuestionId === 'contact'):
@@ -70,7 +70,7 @@ const App = () => {
                 setTimeout(() => displayNextQuestion(nextQuestionId, dataset[nextQuestionId]), 750)
                 break;
         }
-    };
+    },[answers]);
 
     // 最初の質問をチャットエリアに表示する
     useEffect(() => {

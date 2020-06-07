@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import './assets/styles/style.css'
 import {db} from './firebase/index'
 import {AnswersList, Chats, Loading} from './components/index'
@@ -51,7 +51,7 @@ class App extends React.Component {
     }
 
     // 回答が選択された時に呼ばれる関数
-    selectAnswer = (selectedAnswer, nextQuestionId) => {
+    selectAnswer = useCallback((selectedAnswer, nextQuestionId) => {
         switch (true) {
             // コンポーネントの初期化時
             case (nextQuestionId === 'init'):
@@ -86,7 +86,7 @@ class App extends React.Component {
                 setTimeout(() => this.displayNextQuestion(nextQuestionId), 750)
                 break;
         }
-    };
+    },[]);
 
     // 最初の質問をチャットエリアに表示する
     componentDidMount() {
