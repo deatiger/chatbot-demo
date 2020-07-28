@@ -1,3 +1,6 @@
+# License
+The source code is licensed MIT. The website content is licensed CC BY 4.0,see LICENSE.
+
 ## Name
 [Chatbot｜とらゼミ](https://chatbot-demo-1bc98.web.app/)
 
